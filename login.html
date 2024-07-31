@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h2>Login</h2>
+    <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="Hanshul"><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="12345678"><br><br>
+        <button id="login">Login</button>
+    </form>
+
+<script>
+  const loginButton = document.getElementById('login-button');
+
+  loginButton.addEventListener('click', () => {
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+
+    // Add your authentication logic here
+    if (username && password) {
+      alert("Login successful!");
+      // Redirect to next page or perform other actions
+    } else {
+      alert("Invalid username or password.");
+    }
+  });
+</script>
+
+    
+</body>
+</html>

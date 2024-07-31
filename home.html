@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address_button</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <button id="sign-up">Sign Up</button>
+
+<script>
+  const signIn = document.getElementById('sign-up');
+
+  signIn.addEventListener('click', () => {
+    const location = prompt("Please enter your location:");
+    const states = ["Haryana","haryana", "Punjab","punjab", "Chandigarh","chandigarh"];
+
+    if (states.includes(location)) {
+      window.open("login.html", "_self");
+    } else {
+      alert("Sorry,can not access.");
+    }
+  });
+</script>
+    
+</body>
+</html>
+</html>
